@@ -163,6 +163,7 @@ type Cyclop struct {
 	MaxComplexity  int     `mapstructure:"max-complexity"`
 	PackageAverage float64 `mapstructure:"package-average"`
 	SkipTests      bool    `mapstructure:"skip-tests"`
+	SkipSwitch     bool    `mapstructure:"skip-switch"`
 }
 
 type DepGuardSettings struct {

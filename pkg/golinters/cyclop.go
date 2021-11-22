@@ -1,7 +1,7 @@
 package golinters
 
 import (
-	"github.com/bkielbasa/cyclop/pkg/analyzer"
+	"github.com/heeus/cyclop/pkg/analyzer"
 	"golang.org/x/tools/go/analysis"
 
 	"github.com/golangci/golangci-lint/pkg/config"
@@ -17,6 +17,7 @@ func NewCyclop(settings *config.Cyclop) *goanalysis.Linter {
 	if settings != nil {
 		d := map[string]interface{}{
 			"skipTests": settings.SkipTests,
+			"skipSwitch": settings.SkipSwitch,
 		}
 
 		if settings.MaxComplexity != 0 {

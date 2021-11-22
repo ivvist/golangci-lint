@@ -1,4 +1,4 @@
-module github.com/golangci/golangci-lint
+module github.com/ivvist/golangci-lint
 
 go 1.16
 
@@ -99,3 +99,5 @@ require (
 	mvdan.cc/lint v0.0.0-20170908181259-adc824a0674b // indirect
 	mvdan.cc/unparam v0.0.0-20210104141923-aac4ce9116a7
 )
+
+replace github.com/bkielbasa/cyclop v1.2.0 => github.com/heeus/cyclop v1.2.101
