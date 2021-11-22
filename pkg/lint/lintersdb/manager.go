@@ -268,7 +268,7 @@ func (m Manager) GetAllSupportedLinterConfigs() []*linter.Config {
 			WithSince("v1.37.0").
 			WithLoadForGoAnalysis().
 			WithPresets(linter.PresetComplexity).
-			WithURL("https://github.com/bkielbasa/cyclop"),
+			WithURL("https://github.com/heeus/cyclop"),
 		linter.NewConfig(golinters.NewGocognit()).
 			WithSince("v1.20.0").
 			WithPresets(linter.PresetComplexity).
